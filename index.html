@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lösenords Generator v3</title>
+    <link rel="icon" href="./images/techover.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Password Generator</div>
+      <div class="header">
+        <div id="header-text">-</div>
+        <img
+          class="header-image"
+          src="images/copy-icon.svg"
+          alt="Copy Icon"
+          id="copy-image"
+        />
+      </div>
+      <div class="card">
+        <div class="card-text">
+          <p>Character Length</p>
+          <p id="card-text-length">11</p>
+        </div>
+        <div class="slider-container">
+          <input
+            type="range"
+            id="count-slider"
+            min="1"
+            max="20"
+            value="11"
+            class="slider"
+          />
+        </div>
+        <div class="checkboxes">
+          <div>
+            <input
+              type="checkbox"
+              id="uppercase"
+              name="uppercase"
+              value="uppercase"
+              checked
+            />
+            <label for="uppercase">Include Uppercase Letters</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="lowercase"
+              name="lowercase"
+              value="lowercase"
+              checked
+            />
+            <label for="lowercase">Include Lowercase Letters</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="numbers"
+              name="numbers"
+              value="numbers"
+              checked
+            />
+            <label for="numbers">Include Numbers</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="symbols"
+              name="symbols"
+              value="symbols"
+            />
+            <label for="symbols">Include Symbols</label>
+          </div>
+        </div>
+        <div class="strength-box">
+          <p>Strength</p>
+          <div class="strength-value">
+            <div id="strength-great">Very Weak</div>
+            <div class="strength-bar">
+              <div class="bar one">
+                <div class="bar-segment"></div>
+              </div>
+              <div class="bar two">
+                <div class="bar-segment"></div>
+              </div>
+              <div class="bar three">
+                <div class="bar-segment"></div>
+              </div>
+              <div class="bar four">
+                <div class="bar-segment"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="gen-btn">Generate</button>
+      </div>
+      <img class="logo" src="images/techover-logo.png" alt="Techover Logo" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
